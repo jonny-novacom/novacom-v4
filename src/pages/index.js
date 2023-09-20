@@ -1,176 +1,140 @@
-import * as React from "react"
+import * as React from "react";
+import ThreeLazy from "../components/three-lazy";
+import WorkLogos from "../components/WorkLogos";
+import Services from "../components/Services";
+import quote from "../svgs/quote.svg";
+import Locations from "../components/Locations";
+import AnimatedText from "../components/AnimatedText";
 
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
-
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
-
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
-
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
-
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/getting-started/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
-
-const IndexPage = () => {
+export default function IndexPage() {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time. 😎
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
-    </main>
-  )
+    <>
+      <main className="relative">
+        <div className="min-h-full h-[500px]">
+          <div className="relative z-10 flex items-center w-full h-full max-w-screen-xl p-4 mx-auto max-w-section">
+            <div className="grid gap-12">
+              <div className="grid gap-2">
+                <AnimatedText />
+                <div className="flex justify-end w-screen-xl">
+                  <h2 className="w-1/2 mr-24 -ml-24 text-base font-light text-left text-white">
+                    A multi-award winning international digital marketing
+                    agency, expert across all key channels. We know it takes
+                    exceptional commercial insight, brilliant creative talent,
+                    and cutting-edge data know-how to maximise competitive
+                    advantage, brand opportunity and fully predictable return of
+                    marketing investment.
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute top-0 left-0 z-0 w-full h-full bg-brand-background">
+            <ThreeLazy />
+          </div>
+        </div>
+      </main>
+
+      <div className="p-16 bg-novaDarkGrey">
+        <div className="container mx-auto">
+          <div className="w-3/4 mx-auto bg-black h-96 "></div>
+        </div>
+      </div>
+
+      <WorkLogos />
+
+      <div className="container mx-auto">
+        <div className="flex justify-end">
+          <div className="w-3/4 px-16 py-12 bg-novaYellow">
+            <p className="pb-4 font-medium tracking-wider uppercase text-novaGrey">
+              MAKE IT HAPPEN
+            </p>
+            <h3 className="text-6xl font-header text-novaGrey">
+              award-winning digital-first CX thought leaders
+            </h3>
+            <p className="w-3/4 pt-4 pl-24 text-base font-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p className="w-3/4 pt-4 pl-24 text-base font-light">
+              Facilisi cras fermentum odio eu. Ullamcorper dignissim cras
+              tincidunt lobortis. Purus viverra accumsan in nisl. Accumsan in
+              nisl nisi scelerisque. Fermentum et sollicitudin ac orci phasellus
+              egestas tellus. Pretium vulputate sapien nec sagittis aliquam.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Services />
+
+      <div className="bg-novaDarkGrey">
+        <div className="container p-16 mx-auto max-w-7xl">
+          <div className="grid grid-cols-5 gap-8">
+            <div className="col-span-2">
+              <p className="pb-4 font-medium tracking-wider text-white uppercase">
+                SHOWCASE
+              </p>
+              <h3 className="text-6xl text-white font-header">
+                Virtual worlds go beyond the realm of video games and VR
+              </h3>
+              <p className="pt-4 pl-24 text-base font-light text-white">
+                In an increasingly competitive global market, they wanted a
+                cohesive brand experience, and an end-to-end single customer
+                view with complete measurability, attribution and visible return
+                on investment to drive revenues.
+              </p>
+              <p className="pt-4 pl-24 text-base font-light text-white">
+                Novacom developed a web-based interactive virtual port,
+                accessible by anyone anywhere, to showcase their new Taro Ultra
+                100 products.
+              </p>
+              <p className="pt-4 pl-24 text-base font-medium text-white">
+                Find out more
+              </p>
+            </div>
+            <div className="col-span-3">
+              <div className="flex justify-start w-3/4 mb-8">
+                <div className="w-full h-64 bg-black"></div>
+              </div>
+
+              <div className="flex justify-end">
+                <div className="w-full px-12 py-8 ml-12 bg-novaYellow">
+                  <div className="flex gap-2">
+                    <div className="w-12">
+                      <svg
+                        width="27"
+                        height="23"
+                        viewBox="0 0 27 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0.1 13.1L6.2 -4.76837e-06H11.3L7.1 12H10.7V22.6H0.1V13.1ZM14.9 13.1L21 -4.76837e-06H26.1L21.9 12H25.5V22.6H14.9V13.1Z"
+                          fill="#334047"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h6 className="text-3xl font-header text-novaGrey">
+                        Novacom helped us achieve An increase in brand
+                        visibility and OUR product range
+                      </h6>
+                      <p className="pt-2 font-light text-novaGrey">
+                        Channel Program Specialist
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Locations />
+    </>
+  );
 }
 
-export default IndexPage
-
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Home Page</title>;
