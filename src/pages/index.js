@@ -2,7 +2,6 @@ import * as React from "react";
 import ThreeLazy from "../components/three-lazy";
 import WorkLogos from "../components/WorkLogos";
 import Services from "../components/Services";
-import quote from "../svgs/quote.svg";
 import Locations from "../components/Locations";
 import AnimatedText from "../components/AnimatedText";
 import YellowArrow from "../components/YellowArrow";

@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="col-span-7 md:col-span-4 bg-novaBlue">
           <div className="flex justify-end">
             <div className="w-full p-8 xl:w-3/4 2xl:w-3/5">
-              <p className="pt-10 text-xl text-center text-white uppercase xl:text-7xl font-header lg:text-6xl">
+              <p className="pt-10 text-xl text-left text-white uppercase xl:text-center xl:text-7xl font-header lg:text-6xl">
                 let’s MAKE IT happen
               </p>
               <p className="mt-12 text-sm font-light text-white">
@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="col-span-7 md:col-span-3 bg-novaGrey">
           <div className="flex justify-start">
             <div className="w-full p-8 xl:w-3/4 2xl:w-3/5">
-              <p className="pt-10 pb-3 text-2xl leading-tight text-white whitespace-pre-line text font-header">
+              <p className="pt-10 pb-3 text-2xl leading-tight text-white whitespace-pre-line font-header">
                 iso 9001, iso 27001 certified and 100% gdpr compliant
               </p>
               <span className="inline-block w-8 h-8 mr-4 rounded-full bg-novaLightGrey"></span>

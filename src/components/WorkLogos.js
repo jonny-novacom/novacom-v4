@@ -26,7 +26,7 @@ export default function WorkLogos() {
 
   return (
     <>
-      <div className="container px-4 py-16 mx-auto max-w-7xl">
+      <div className="container py-16 pl-4 pr-12 mx-auto max-w-7xl">
         <div className="grid grid-cols-2 gap-4 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 xl:grid-cols-7">
           {thelogos.map((logos, i) => (
             <div key={i} className="flex items-center justify-center h-32">

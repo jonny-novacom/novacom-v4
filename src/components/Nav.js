@@ -6,7 +6,7 @@ import BurgerIcon from "./Icons/BurgerIcon";
 export default function Nav() {
   return (
     <>
-      <nav className="fixed top-0 left-0 z-20 w-full px-8 py-4 mx-auto bg-novaBlue">
+      <nav className="fixed top-0 left-0 z-20 w-full py-4 pl-8 pr-12 mx-auto bg-novaBlue">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
           <Link href="/" className="flex items-center">
             <NovacomLogoFooter />
