@@ -12,9 +12,9 @@ export default function IndexPage() {
     <>
       <main className="relative">
         <div className="min-h-full h-[600px]">
-          <div className="relative z-10 w-full h-full max-w-screen-xl px-8 pt-32 mx-auto max-w-section">
+          <div className="relative z-10 w-full h-full max-w-screen-xl pt-32 mx-auto max-w-section">
             <div className="grid gap-12">
-              <div className="grid gap-2">
+              <div className="grid gap-2 px-8">
                 <AnimatedText />
                 <div className="flex justify-end w-screen-xl">
                   <h2 className="text-base font-light text-left text-white md:w-1/2 sm:w-2/3 lg:mr-24 lg:-ml-24 md:-ml-32 md:mr-32">
@@ -51,20 +51,20 @@ export default function IndexPage() {
 
       <div className="container mx-auto">
         <div className="flex justify-end">
-          <div className="w-3/4 px-16 py-12 bg-novaYellow">
+          <div className="px-16 py-12 md:w-3/4 bg-novaYellow sm:w-4/5">
             <p className="pb-4 font-medium tracking-wider uppercase text-novaGrey">
               MAKE IT HAPPEN
             </p>
             <h3 className="text-6xl font-header text-novaGrey">
               award-winning digital-first CX thought leaders
             </h3>
-            <p className="w-3/4 pt-4 pl-24 text-base font-light">
+            <p className="pt-4 pl-8 text-base font-light md:pl-12 md:w-3/4 sm:pl-8 lg:pl-24">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <p className="w-3/4 pt-4 pl-24 text-base font-light">
+            <p className="pt-4 pl-8 text-base font-light md:pl-12 md:w-3/4 sm:pl-8 lg:pl-24">
               Facilisi cras fermentum odio eu. Ullamcorper dignissim cras
               tincidunt lobortis. Purus viverra accumsan in nisl. Accumsan in
               nisl nisi scelerisque. Fermentum et sollicitudin ac orci phasellus
@@ -79,20 +79,20 @@ export default function IndexPage() {
       <div className="bg-novaDarkGrey">
         <div className="container p-16 mx-auto max-w-7xl">
           <div className="grid grid-cols-5 gap-8">
-            <div className="col-span-2">
+            <div className="col-span-5 md:col-span-2">
               <p className="pb-4 font-medium tracking-wider text-white uppercase">
                 SHOWCASE
               </p>
               <h3 className="text-6xl text-white font-header">
                 Virtual worlds go beyond the realm of video games and VR
               </h3>
-              <p className="pt-4 pl-24 text-base font-light text-white">
+              <p className="pt-4 text-base font-light text-white md:pl-12 sm:pl-8 lg:pl-24">
                 In an increasingly competitive global market, they wanted a
                 cohesive brand experience, and an end-to-end single customer
                 view with complete measurability, attribution and visible return
                 on investment to drive revenues.
               </p>
-              <p className="pt-4 pl-24 text-base font-light text-white">
+              <p className="pt-4 text-base font-light text-white md:pl-12 sm:pl-8 lg:pl-24">
                 Novacom developed a web-based interactive virtual port,
                 accessible by anyone anywhere, to showcase their new Taro Ultra
                 100 products.
@@ -101,13 +101,13 @@ export default function IndexPage() {
                 Find out more
               </p>
             </div>
-            <div className="col-span-3">
-              <div className="flex justify-start w-3/4 mb-8">
+            <div className="col-span-5 md:col-span-3">
+              <div className="flex justify-start w-full mb-8">
                 <div className="w-full h-64 bg-black"></div>
               </div>
 
               <div className="flex justify-end">
-                <div className="w-full px-12 py-8 ml-12 bg-novaYellow">
+                <div className="w-full px-12 py-8 ml-12 mr-0 md:-mr-8 bg-novaYellow">
                   <div className="flex gap-2">
                     <div className="w-12">
                       <svg

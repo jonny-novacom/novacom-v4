@@ -25,14 +25,14 @@ export default function Locations() {
 
   return (
     <>
-      <div className="container max-w-5xl px-4 py-16 mx-auto">
+      <div className="container max-w-5xl px-8 py-16 mx-auto">
         <p className="pb-4 font-medium tracking-wider uppercase text-novaGrey">
           MAKE IT HAPPEN WITH NOVACOM
         </p>
         <h3 className="mb-6 text-6xl text-novaGrey font-header">
           our global reach. your local team.
         </h3>
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {thelocations.map((locations, i) => (
             <div key={i} className="">
               <GatsbyImage

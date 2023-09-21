@@ -5,10 +5,10 @@ export default function Footer() {
   return (
     <>
       <div className="grid grid-cols-7">
-        <div className="col-span-5 bg-novaBlue">
+        <div className="col-span-7 md:col-span-4 bg-novaBlue">
           <div className="flex justify-end">
-            <div className="w-3/4 p-8">
-              <p className="pt-10 text-center text-white uppercase text-8xl font-header">
+            <div className="w-full p-8 xl:w-3/4 2xl:w-3/5">
+              <p className="pt-10 text-xl text-center text-white uppercase xl:text-7xl font-header lg:text-6xl">
                 let’s MAKE IT happen
               </p>
               <p className="mt-12 text-sm font-light text-white">
@@ -29,9 +29,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="col-span-2 bg-novaGrey">
+        <div className="col-span-7 md:col-span-3 bg-novaGrey">
           <div className="flex justify-start">
-            <div className="w-3/4 p-8">
+            <div className="w-full p-8 xl:w-3/4 2xl:w-3/5">
               <p className="pt-10 pb-3 text-2xl leading-tight text-white whitespace-pre-line text font-header">
                 iso 9001, iso 27001 certified and 100% gdpr compliant
               </p>
