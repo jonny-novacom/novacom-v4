@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.services-title {
-  white-space: pre-line;
-}
-
 .text-transition {
   display: inline-block !important;
 }

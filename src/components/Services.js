@@ -25,8 +25,8 @@ export default function Services() {
           {theServices.map((services, i) => (
             <div
               key={i}
-              className="flex items-end justify-start h-40 p-4 bg-novaLightGrey">
-              <h6 className="text-3xl font-header text-novaGrey services-title">
+              className="flex items-end justify-start h-40 p-4 whitespace-pre-line bg-novaLightGrey">
+              <h6 className="text-3xl font-header text-novaGrey">
                 {services.title}
               </h6>
             </div>

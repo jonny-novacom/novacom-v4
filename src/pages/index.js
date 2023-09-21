@@ -5,18 +5,19 @@ import Services from "../components/Services";
 import quote from "../svgs/quote.svg";
 import Locations from "../components/Locations";
 import AnimatedText from "../components/AnimatedText";
+import YellowArrow from "../components/YellowArrow";
 
 export default function IndexPage() {
   return (
     <>
       <main className="relative">
-        <div className="min-h-full h-[500px]">
-          <div className="relative z-10 flex items-center w-full h-full max-w-screen-xl p-4 mx-auto max-w-section">
+        <div className="min-h-full h-[600px]">
+          <div className="relative z-10 w-full h-full max-w-screen-xl px-8 pt-32 mx-auto max-w-section">
             <div className="grid gap-12">
               <div className="grid gap-2">
                 <AnimatedText />
                 <div className="flex justify-end w-screen-xl">
-                  <h2 className="w-1/2 mr-24 -ml-24 text-base font-light text-left text-white">
+                  <h2 className="text-base font-light text-left text-white md:w-1/2 sm:w-2/3 lg:mr-24 lg:-ml-24 md:-ml-32 md:mr-32">
                     A multi-award winning international digital marketing
                     agency, expert across all key channels. We know it takes
                     exceptional commercial insight, brilliant creative talent,
@@ -27,7 +28,13 @@ export default function IndexPage() {
                 </div>
               </div>
             </div>
+            <div className="flex justify-end max-w-screen-2xl">
+              <div className="p-4 -mt-16">
+                <YellowArrow />
+              </div>
+            </div>
           </div>
+
           <div className="absolute top-0 left-0 z-0 w-full h-full bg-brand-background">
             <ThreeLazy />
           </div>

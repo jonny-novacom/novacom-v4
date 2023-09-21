@@ -1,7 +1,7 @@
 import React from "react";
 import TextTransition, { presets } from "react-text-transition";
 
-const TEXTS = ["HAPPEN", "A SUCCESS", "GREAT", "WOW"];
+const TEXTS = ["HAPPEN", "GREAT", "WOW"];
 
 export default function AnimatedText() {
   const [index, setIndex] = React.useState(0);
@@ -16,7 +16,7 @@ export default function AnimatedText() {
 
   return (
     <>
-      <h2 className="inline-block text-left text-white text-[200px] font-header -mb-20">
+      <h2 className="inline-block text-left text-white lg:text-[180px] font-header lg:-mb-16 md:text-[120px] md:-mb-12 sm:text-[100px] sm:-mb-8 text-[80px] sm:leading-normal  leading-[80px]">
         MAKE IT{"\u00A0"}
         <TextTransition springConfig={presets.stiff}>
           {TEXTS[index % TEXTS.length]}
