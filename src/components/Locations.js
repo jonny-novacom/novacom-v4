@@ -25,7 +25,7 @@ export default function Locations() {
 
   return (
     <>
-      <div className="container max-w-5xl py-16 pl-8 pr-12 mx-auto">
+      <div className="container max-w-5xl px-8 py-16 mx-auto">
         <p className="pb-4 font-medium tracking-wider uppercase text-novaGrey">
           MAKE IT HAPPEN WITH NOVACOM
         </p>

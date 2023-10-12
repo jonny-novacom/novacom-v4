@@ -3,8 +3,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Novacom v4`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Novacom | Award-winning digital marketing and customer experience agency`,
+    siteUrl: `https://www.novacom.group`,
+    description: "We convert your prospects into long term customers through immersive digital experiences - from VR, AR and 360° video, to web design and marketing automation.",
   },
   plugins: [
     {

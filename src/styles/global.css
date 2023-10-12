@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .font-condensed {
+    font-stretch: ultra-condensed;
+  }
+}
+
 .text-transition {
   display: inline-block !important;
+}
+
+.Sidebar {
+  background-color: #65f9c1;
+  position: fixed;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.three:hover span {
+  height: 120%;
 }

@@ -1,18 +1,13 @@
 import React from "react";
 import { useRef, useEffect } from "react";
 
-import { extend } from "@react-three/fiber";
-import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
-import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry";
+import { AccumulativeShadows, useGLTF } from "@react-three/drei";
 
 import { Perf } from "r3f-perf";
-import nexa from "../images/NexaRegular.json";
-
-extend({ TextGeometry });
 
 export default function NovacomA(props) {
   const ref = useRef();
-  const font = new FontLoader().parse(nexa);
+  const { nodes, materials } = useGLTF("/novacomA.glb");
 
   useEffect(() => {
     // ref.current.position.y = -1;
@@ -22,18 +17,18 @@ export default function NovacomA(props) {
 
   return (
     <>
-      <Perf position="top-left" />
+      {/* <Perf position="top-left" /> */}
 
-      {/* <mesh scale={0.5}>
-        <boxGeometry />
-        <meshNormalMaterial />
-      </mesh> */}
-      <ambientLight />
-
-      <mesh scale={0.6} background={"0x2172f6"} {...props} ref={ref}>
+      {/* <mesh scale={0.6} background={"0x2172f6"} {...props} ref={ref}>
         <textGeometry args={["V", { font, size: 3.5, height: 0.01 }]} />
         <meshPhongMaterial color={"0x2172f6"} />
-      </mesh>
+      </mesh> */}
+
+      <group {...props} dispose={null}>
+        <mesh castShadow receiveShadow geometry={nodes.Curve.geometry} material={materials["Material.002"]} position={[-5, 0, 0]} rotation={[Math.PI / 2, Math.PI / 1.5, 0]} />
+      </group>
     </>
   );
 }
+
+useGLTF.preload("/novacomA.glb");

@@ -3,7 +3,9 @@ import React, { useState, useContext } from "react";
 const SiteContext = React.createContext();
 
 const SiteProvider = ({ children }) => {
-  return <SiteContext.Provider value={{}}>{children}</SiteContext.Provider>;
+  const [showSidebar, setShowSidebar] = useState(false);
+
+  return <SiteContext.Provider value={{ showSidebar, setShowSidebar }}>{children}</SiteContext.Provider>;
 };
 
 export const useGlobalContext = () => {

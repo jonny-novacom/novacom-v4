@@ -1,13 +1,14 @@
 import React from "react";
-import { SiteProvider } from "../utils/context";
 import Footer from "./Footer";
-import Nav from "./Nav";
+import Nav2 from "./Nav2";
+import { SiteProvider } from "../utils/context";
 
 export default function Layout({ children }) {
   return (
     <div className="debug-screens">
       <SiteProvider>
-        <Nav />
+        <Nav2 />
+        {/* <Sidebar /> */}
         {children}
         <Footer />
       </SiteProvider>

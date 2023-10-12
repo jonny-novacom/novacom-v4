@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="col-span-7 md:col-span-4 bg-novaBlue">
           <div className="flex justify-end">
             <div className="w-full p-8 xl:w-3/4 2xl:w-3/5">
-              <p className="pt-10 text-xl text-left text-white uppercase xl:text-center xl:text-7xl font-header lg:text-6xl">
+              <p className="pt-10 text-6xl text-left text-white uppercase xl:text-center xl:text-7xl font-header lg:text-6xl">
                 let’s MAKE IT happen
               </p>
               <p className="mt-12 text-sm font-light text-white">
