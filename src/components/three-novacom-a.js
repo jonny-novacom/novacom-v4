@@ -5,9 +5,11 @@ import { AccumulativeShadows, useGLTF } from "@react-three/drei";
 
 import { Perf } from "r3f-perf";
 
+// import NovacomIcon from "../glb/novacomA.glb";
+
 export default function NovacomA(props) {
   const ref = useRef();
-  const { nodes, materials } = useGLTF("/novacomA.glb");
+  const { nodes, materials } = useGLTF("./novacomA.glb");
 
   useEffect(() => {
     // ref.current.position.y = -1;
@@ -31,4 +33,4 @@ export default function NovacomA(props) {
   );
 }
 
-useGLTF.preload("/novacomA.glb");
+useGLTF.preload("./novacomA.glb");
