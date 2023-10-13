@@ -26,3 +26,7 @@
 .three:hover span {
   height: 120%;
 }
+
+.text-shadow {
+  text-shadow: 0px 0px 25px rgba(0,0,0,0.3);
+}

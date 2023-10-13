@@ -16,11 +16,9 @@ export default function AnimatedText() {
 
   return (
     <>
-      <h2 className="inline-block text-left text-white lg:text-[180px] font-header lg:-mb-16 md:text-[120px] md:-mb-12 sm:text-[100px] sm:-mb-8 text-[80px] sm:leading-normal  leading-[80px]">
+      <h2 className="inline-block text-left text-white lg:text-[180px] font-header lg:-mb-16 md:text-[120px] md:-mb-12 sm:text-[100px] sm:-mb-8 text-[80px] sm:leading-normal  leading-[80px] text-shadow">
         MAKE IT{"\u00A0"}
-        <TextTransition springConfig={presets.stiff}>
-          {TEXTS[index % TEXTS.length]}
-        </TextTransition>
+        <TextTransition springConfig={presets.stiff}>{TEXTS[index % TEXTS.length]}</TextTransition>
       </h2>
     </>
   );

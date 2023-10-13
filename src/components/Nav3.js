@@ -81,32 +81,6 @@ export default function Nav() {
                             </p>
                           </Link>
                         </li>
-
-                        // <li className="py-3">
-                        //   <Link href="#" className="block text-6xl text-center text-white font-header">
-                        //     About
-                        //   </Link>
-                        // </li>
-                        // <li className="py-3">
-                        //   <Link href="#" className="block text-6xl text-center text-white font-header">
-                        //     Services
-                        //   </Link>
-                        // </li>
-                        // <li className="py-3">
-                        //   <Link href="#" className="block text-6xl text-center text-white font-header">
-                        //     Work
-                        //   </Link>
-                        // </li>
-                        // <li className="py-3">
-                        //   <Link href="#" className="block text-6xl text-center text-white font-header">
-                        //     News and Insights
-                        //   </Link>
-                        // </li>
-                        // <li className="py-3">
-                        //   <Link href="#" className="block text-6xl text-center text-white font-header">
-                        //     Contact us
-                        //   </Link>
-                        // </li>
                       ))}
                     </ul>
                   </div>

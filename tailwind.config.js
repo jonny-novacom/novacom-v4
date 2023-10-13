@@ -24,7 +24,11 @@ module.exports = {
       animation: {
         slideIn: "slideIn .25s ease-in-out forwards var(--delay, 0)",
       },
+      transitionDelay: {
+        1500: "1500ms",
+      },
     },
   },
+  plugins: [require("tailwindcss-debug-screens")],
   plugins: [require("tailwindcss-debug-screens")],
 };
