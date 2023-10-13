@@ -9,7 +9,7 @@ import { Perf } from "r3f-perf";
 
 export default function NovacomA(props) {
   const ref = useRef();
-  const { nodes, materials } = useGLTF("./public/novacomA.glb");
+  const { nodes, materials } = useGLTF("/novacomA.glb");
 
   useEffect(() => {
     // ref.current.position.y = -1;
@@ -33,4 +33,4 @@ export default function NovacomA(props) {
   );
 }
 
-useGLTF.preload("./public/novacomA.glb");
+useGLTF.preload("/novacomA.glb");
